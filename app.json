@@ -1,13 +1,12 @@
 {
-    "name": " Zaen Music And Video Player",
-    "description": "UserBot Untuk Memutar Lagu Dan Video Di Obrolan Suara Telegram.",
-    "logo": "https://telegra.ph/file/4219866eba63bcac65527.jpg",
+    "name": " Music And Video Player",
+    "description": "UserBot.",
     "keywords": [
         "Telegram",
         "MusicPlayer",
         "VideoPlayer"
     ],
-    "repository": "https://github.com/Zaen-ubot/ZaenMusic",
+    "repository": "https://github.com/nikhilq/NIKHIL-USER-BOT",
     "env": {
         "SESSION": {
             "description": "Pyrogram String Session",
