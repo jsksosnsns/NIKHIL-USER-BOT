@@ -157,7 +157,7 @@ async def play(client, m: Message):
 
     else:
         if len(m.command) < 2:
-            await m.reply("Balas ke File Audio atau berikan sesuatu untuk Pencarian")
+            await m.reply("🔎")
         else:
             await m.delete()
             huehue = await m.reply("**✧ Sedang Mencari Lagu... Mohon Bersabar**")
@@ -218,7 +218,7 @@ async def videoplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**✧ Memproses Video....**")
+            huehue = await replied.reply("**✧ Video....**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -281,7 +281,7 @@ async def videoplay(client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "**Balas ke File Audio atau berikan sesuatu untuk Pencarian**"
+                "**🔎**"
             )
         else:
             await m.delete()
@@ -411,4 +411,4 @@ async def playlist(client, m: Message):
                 QUE = QUE + "\n" + f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`\n"
             await m.reply(QUE, disable_web_page_preview=True)
     else:
-        await m.reply("**✧ Tidak Memutar Apapun...**")
+        await m.reply("**❌**")
